@@ -1,0 +1,10 @@
+node_modules
+**/.next/**
+**/_next/**
+**/.vscode/**
+**/dist/**
+e2e-tests/**
+**/__tmp__/**
+public/sw.js
+public/workbox-*.js
+environment.d.ts

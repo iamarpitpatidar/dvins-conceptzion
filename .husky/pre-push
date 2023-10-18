@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn lint-language
+yarn test-types
+npx enforce-branch-name '^(feature|feat|bugfix|hotfix|fix|release)[a-z0-9._-]+$' --ignore 'staging'
