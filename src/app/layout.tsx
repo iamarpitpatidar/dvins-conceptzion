@@ -26,13 +26,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `Create Your Store PWA App and Mobile Website in Minutes - ${process.env.NEXT_PUBLIC_APP_NAME}`,
-    description: `Build your store's Progressive Web App (PWA) and mobile website effortlessly with ${process.env.NEXT_PUBLIC_APP_NAME}`,
+    title: `${process.env.NEXT_PUBLIC_APP_NAME} - Elevating Interior Design Creativity`,
+    description: `Experience the future of interior design with ${process.env.NEXT_PUBLIC_APP_NAME}. Transform your space with cutting-edge creativity and personalized solutions.`,
     url: new URL(process.env.NEXT_PUBLIC_APP_URL),
     siteName: process.env.NEXT_PUBLIC_APP_NAME,
     locale: 'en_SG',
     type: 'website',
-    images: '',
   },
   twitter: {
     card: 'summary_large_image',
