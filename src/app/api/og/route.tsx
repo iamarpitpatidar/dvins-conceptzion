@@ -316,7 +316,6 @@ function Icon(): ReactElement {
 export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
   try {
     const { searchParams } = new URL(req.url)
-    const isLight = req.headers.get('Sec-CH-Prefers-Color-Scheme') === 'light'
 
     const title = searchParams.has('title')
       ? searchParams.get('title')
@@ -340,7 +339,7 @@ export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
               fontSize: '48px',
               fontWeight: '600',
               letterSpacing: '-0.04em',
-              color: isLight ? 'black' : 'white',
+              color: 'black',
               top: '250px',
               left: '50%',
               transform: 'translateX(-50%)',
