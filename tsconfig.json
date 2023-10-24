@@ -6,7 +6,7 @@
       "@public/*": ["public/*"],
       "@src/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
+      "@shared/*": ["src/shared/*"],
       "@lib/*": ["src/lib/*"]
     },
     "types": ["react", "node", "trusted-types"],
