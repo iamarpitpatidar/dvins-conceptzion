@@ -3,8 +3,6 @@ import { ImageResponse } from 'next/server'
 import type { ReactElement } from 'react'
 
 export const runtime = 'edge'
-export const alt = process.env.NEXT_PUBLIC_APP_NAME
-export const contentType = 'image/png'
 
 const interSemiBold = fetch(
   new URL('./Inter-SemiBold.ttf', import.meta.url),
