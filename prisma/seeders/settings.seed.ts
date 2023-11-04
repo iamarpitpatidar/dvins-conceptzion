@@ -3,6 +3,10 @@ import { PrismaClient } from '@prisma/client'
 export default async function seedSettings(prisma: PrismaClient) {
   const settings: { key: string; value: string }[] = [
     {
+      key: 'company_name',
+      value: process.env.NEXT_PUBLIC_APP_NAME as string,
+    },
+    {
       key: 'contact_email',
       value: 'enquiry@dvinsconceptzion.com',
     },

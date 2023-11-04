@@ -1,17 +1,26 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Be_Vietnam_Pro } from 'next/font/google'
 import { ReactNode } from 'react'
 import { clsx } from 'clsx'
+import Script from 'next/script'
+
+import Header from '@shared/Header'
+import Footer from '@shared/Footer'
+import Template from '@shared/components/template'
 
 import '@assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css'
 import '@assets/css/globals.css'
-
-import Header from '@shared/Header'
 
 const vietnamPro = Be_Vietnam_Pro({
   weight: ['400', '500'],
   subsets: ['latin'],
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL),
@@ -25,8 +34,6 @@ export const metadata: Metadata = {
     'Office design',
     'Interior architecture',
   ],
-  viewport:
-    'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover',
   alternates: {
     canonical: new URL(process.env.NEXT_PUBLIC_APP_URL),
     languages: {
@@ -78,7 +85,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="lqd-sticky-placeholder hidden"></div>
           <Header />
           {children}
+          <Footer />
         </div>
+
+        <Script src="assets/vendors/jquery.min.js" />
+        <Script src="assets/vendors/fastdom/fastdom.min.js" />
+        <Script src="assets/vendors/gsap/minified/gsap.min.js" />
+        <Script src="assets/vendors/gsap/minified/ScrollTrigger.min.js" />
+        <Script src="assets/vendors/flickity/flickity.pkgd.min.js" />
+        <Script src="assets/vendors/tinycolor-min.js" />
+        <Script src="assets/js/theme.min.js" />
+
+        {/* Theme Templates */}
+        <Template id="lqd-temp-sticky-header-sentinel">
+          {`<div className="lqd-sticky-sentinel invisible absolute pointer-events-none"></div>`}
+        </Template>
       </body>
     </html>
   )
