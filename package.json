@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "prisma generate && next dev",
-    "build": "prisma generate && prisma db push && next build",
+    "build": "prisma generate && prisma db push && prisma db seed && next build",
     "start": "next start",
     "lint": "yarn lint-language && yarn lint-eslint && yarn prettier-check && yarn test-types",
     "lint-fix": "eslint . --ext js,jsx,ts,tsx --fix --max-warnings=0 --config .eslintrc.json --no-eslintrc",
