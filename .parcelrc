@@ -1,6 +1,6 @@
 {
   "extends": "@parcel/config-default",
-  "namers": ["parcel-namer-struct", "..."],
+  "namers": ["parcel-namer-struct", "parcel-namer-functional", "..."],
   "resolvers": ["parcel-resolver-ignore", "..."],
   "reporters":  ["...", "parcel-reporter-static-files-copy"]
 }
