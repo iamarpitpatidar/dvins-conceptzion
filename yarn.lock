@@ -427,7 +427,7 @@
   dependencies:
     "@parcel/plugin" "2.10.2"
 
-"@parcel/plugin@2.10.2":
+"@parcel/plugin@2.10.2", "@parcel/plugin@^2.0.0-beta.1":
   version "2.10.2"
   resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.10.2.tgz#46d0b80dd83583f75a4e925a3144cea055c5dfb4"
   integrity sha512-1u+GJhuqqlYjMAQLBbMExfFCbsbtuSAm6wXmMmTse5cBpFqxgsMumMeztAhcTy0oMnMhbZg2AKZV0XVSMrIgng==
@@ -1559,6 +1559,13 @@ ordered-binary@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/ordered-binary/-/ordered-binary-1.4.1.tgz#205cb6efd6c27fa0ef4eced994a023e081cdc911"
   integrity sha512-9LtiGlPy982CsgxZvJGNNp2/NnrgEr6EAyN3iIEP3/8vd3YLgAZQHbQ75ZrkfBRGrNg37Dk3U6tuVb+B4Xfslg==
+
+parcel-reporter-static-files-copy@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/parcel-reporter-static-files-copy/-/parcel-reporter-static-files-copy-1.5.3.tgz#807493b7eadae9879eeb8c0d3792561cff9dea36"
+  integrity sha512-Ukq2SyJYn3GFIPCLamXuQ+2t+0j54llujjOUoRjtmVvfsuGnJDEpMznADeIoKuQDvy0jpxtWzWkQvxqI/j+U4A==
+  dependencies:
+    "@parcel/plugin" "^2.0.0-beta.1"
 
 parcel-resolver-ignore@^2.1.5:
   version "2.1.5"

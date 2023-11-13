@@ -9,6 +9,7 @@
   "devDependencies": {
     "@parcel/transformer-pug": "^2.10.2",
     "parcel": "^2.10.2",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "parcel-resolver-ignore": "^2.1.5"
   },
   "source": "src/index.pug",
@@ -19,6 +20,20 @@
   ],
   "parcelIgnore": [
     "./assets/vendors/*",
-    "./assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css"
+    "./assets/css/theme.min.css"
+  ],
+  "staticFiles": [
+    {
+      "staticPath": "src/assets/css/theme.min.css",
+      "staticOutPath": "assets/css"
+    },
+    {
+      "staticPath": "src/assets/vendors",
+      "staticOutPath": "assets/vendors"
+    },
+    {
+      "staticPath": "src/php",
+      "staticOutPath": "scripts"
+    }
   ]
 }
