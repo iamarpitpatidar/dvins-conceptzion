@@ -52,13 +52,13 @@ footer#site-footer.main-footer.bg-dark.text-white-50(data-sticky-footer='true')
             h3.ld-fh-element.inline-block.relative.text-10.uppercase.tracking-2.mb-1em.text-white-30 Call us directly
           .ld-fancy-heading.relative.mb-1em
             h5.ld-fh-element.inline-block.relative.text-18.font-semibold(class='mb-0/5em')
-              a.text-white(href='tel:+6583330668') +65 83330668
+              a.text-white(href='tel:'+contact_phone.replace(" ", '')) #{contact_phone}
           .ld-fancy-heading.relative
             h3.ld-fh-element.inline-block.relative.text-10.uppercase.tracking-2.mb-1em.text-white-30 Need support?
           .ld-fancy-heading.relative
             h5.ld-fh-element.inline-block.relative(class='mb-0/5em')
               span.text-18.font-semibold
-                a.text-white(href='mailto:enquiry@dvinsconceptzion.com') enquiry@dvinsconceptzion.com
+                a.text-white(href='mailto:'+contact_mail) #{contact_mail}
         .w-30percent.flex.flex-auto.flex-col.mb-20.module-col(class='lg:w-full')
           .ld-fancy-heading.relative
             h3.ld-fh-element.inline-block.relative.text-10.uppercase.tracking-2.mb-3em.text-white-30 KEEP IN TOUCH

@@ -29,7 +29,7 @@
                 .ld-fancy-heading.relative
                   p.ld-fh-element.inline-block.relative(class='mb-0/5em')
                     span.text-16.font-bold(class='leading-1/2em')
-                      a(href='mailto:enquiry@dvinsconceptzion.com') enquiry@dvinsconceptzion.com
+                      a(href='mailto:'+contact_mail) #{contact_mail}
         .w-45percent.relative.flex.flex-col.module-form(class='sm:w-full')
           .lqd-contact-form.lqd-contact-form-inputs-underlined.lqd-contact-form-button-lg.lqd-contact-form-button-block.p-10(class='sm:p-0')
             div(role='form')
@@ -59,7 +59,7 @@
                         textarea.text-13.text-black.border-black-20.bg-transparent(name='message' cols='10' rows='6' aria-required='true' aria-invalid='false' placeholder='Tell us about your project')
                   .col.col-12.text-center.px-15
                     input.lqd-cf-form-control.text-16.uppercase.font-medium.leading-1em.tracking-1.font-bold.bg-primary.text-white.rounded-100.border-none(type='submit' value='— send message')
-                    p.text-black(class='mt-1/25em') &mdash; copy email: enquiry@dvinsconceptzion.com
+                    p.text-black(class='mt-1/25em') &mdash; copy email: #{contact_mail}
               .lqd-cf-response-output
     .lqd-modal-foot
 // Contact modal
