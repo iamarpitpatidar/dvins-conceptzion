@@ -5,10 +5,12 @@ html(lang="en")
     #wrap.bg-white
       .lqd-sticky-placeholder.hidden
       include includes/header
-      block content
+      main#lqd-site-content.content.bg-white
+        .lqd-contents-wrap
+          block content
       include includes/footer
     include includes/modals/contact-modal
-    //include includes/scripts
+    include includes/scripts
     include includes/cursor
 
     template#lqd-temp-sticky-header-sentinel
