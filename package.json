@@ -1,7 +1,11 @@
 {
-  "name": "Dvins Conceptzion",
+  "name": "dvins-conceptzion",
   "version": "1.0.0",
-  "dependencies": {
-    "sharp": "^0.32.6"
+  "private": true,
+  "scripts": {
+    "build": "pug *.pug --out dist"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
