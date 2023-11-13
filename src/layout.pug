@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  include includes/head
+  body.lqd-cc-outer-hidden(data-lqd-cc="true" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="modern" data-mobile-nav-scheme="dark" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="gray" data-mobile-logo-alignment="default" data-mobile-header-builder="true" data-overlay-onmobile="false" data-disable-animations-onmobile="true")
+    #wrap.bg-white
+      .lqd-sticky-placeholder.hidden
+      include includes/header
+      block content
+      include includes/footer
+    include includes/modals/contact-modal
+    //include includes/scripts
+    include includes/cursor
+
+    template#lqd-temp-sticky-header-sentinel
+      .lqd-sticky-sentinel.invisible.absolute.pointer-events-none
+    .lity(role='dialog' aria-label='Dialog Window (Press escape to close)' tabindex='-1' data-modal-type='default')
+      .lity-wrap(data-lity-close='' role='document')
+        .lity-loader(aria-hidden='true') Loading...
+        .lity-container
+          .lity-content
+        button.lity-close(type='button' aria-label='Close (Press escape to close)' data-lity-close='') &times;

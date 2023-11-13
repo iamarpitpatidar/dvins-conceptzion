@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --no-source-maps"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.10.2",

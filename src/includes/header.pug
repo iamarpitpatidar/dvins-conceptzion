@@ -1,0 +1,199 @@
+header#site-header.main-header.sticky-header-noshadow(data-sticky-header='true' data-sticky-values-measured='false' data-sticky-options='{"disableOnMobile": true, "dynamicColors": true}')
+  .lqd-head-sec-wrap.w-full.pt-20.px-75.module-header
+    .flex.items-center.justify-between.rounded-4.shadow-black-15.px-25.bg-white.m-0
+      .w-30percent.flex.items-center.p-0(class='sm:w-50percent')
+        .module-logo.flex.navbar-brand-plain.py-15
+          a.navbar-brand.flex.p-0.relative(href='/' rel='home')
+            span.navbar-brand-inner.post-rel
+              img.logo-default(src='./assets/images/logo/logo.svg' alt='Asymmetric nine')
+      .flex.justify-center.p-0(class='lg:hidden')
+        .module-primary-nav.flex
+          nav.navbar-collapse.lqd-submenu-default-style.inline-flex.p-0.text-14.font-medium(aria-expanded='false')
+            ul.main-nav.main-nav-hover-fade-inactive.link-black.flex.reset-ul.justify-center(itemtype='http://schema.org/SiteNavigationElement' itemscope='itemscope' data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}' data-localscroll='true' data-localscroll-options='{"itemsSelector":">li > a", "offset": 85}')
+              li
+                a(href='/')
+                  | Home
+              li
+                a(href='about')
+                  | About
+                  span.link-icon.inline-flex.hide-if-empty.right-icon
+                    i.lqd-icn-ess.icon-ion-ios-arrow-down
+              li
+                a(href='services')
+                  | Services
+                  span.link-icon.inline-flex.hide-if-empty.right-icon
+                    i.lqd-icn-ess.icon-ion-ios-arrow-down
+              li
+                a(href='projects')
+                  | Projects
+                  span.link-icon.inline-flex.hide-if-empty.right-icon
+                    i.lqd-icn-ess.icon-ion-ios-arrow-down
+              li
+                a(href='/#reviews')
+                  | Reviews
+                  span.link-icon.inline-flex.hide-if-empty.right-icon
+                    i.lqd-icn-ess.icon-ion-ios-arrow-down
+              li
+                a(href='contact')
+                  | Contact
+                  span.link-icon.inline-flex.hide-if-empty.right-icon
+                    i.lqd-icn-ess.icon-ion-ios-arrow-down
+      .w-30percent.flex.items-center.justify-end.p-0(class='sm:w-50percent' data-custom-animations='true' data-ca-options='{" animationTarget": ".animation-element", "duration" :600, "ease": "back.out", "initValues": {"x": "100px", "opacity" : 0} , "animations": {"x": "0px", "opacity" : 1}}')
+        .flex.justify-end.items-center(class='sm:hidden')
+          a.button.btn.text-14.font-bold.uppercase.leading-1em.tracking-1.text-black.border-2.rounded-100.whitespace-nowrap.px-1em.mr-10.z-1.text-14.animation-element(href='#contact-modal' class='py-0/6em hover:bg-black hover:text-white' data-lity='#contact-modal')
+            span.btn-txt(data-text='Send a message') Send a message
+          a.button.btn.btn-solid.btn-custom-size.btn-icon-block.btn-icon-top.tracking-1.text-black.rounded-full.whitespace-nowrap.z-1.bg-accent.border-none.p-0.w-30.h-30.animation-element(href='#contact-modal' class='sm:hidden' data-lity='#contact-modal')
+            span.btn-icon.w-1em
+              svg(xmlns='http://www.w3.org/2000/svg' width='10.625' height='10.625' viewbox='0 0 10.625 10.625')
+                path(d='M-1.76-11.322H5.313V-4.25H3.885V-8.932L-4.316-.7l-1-1,8.2-8.234H-1.76Z' transform='translate(5.313 11.322)')
+        .hidden.ml-15(class='lg:block')
+          .ld-module-sd.ld-module-sd-hover.ld-module-sd-left.module-mobile-nav
+            button.nav-trigger.style-6.txt-left.collapsed.text-13.font-normal.tracking-0.capitalize.bg-transparent.p-0.border-none.flex.relative.items-center.justify-center(type='button' data-ld-toggle='true' data-bs-toggle-options='{"cloneTriggerInTarget": false, "type": "click"}' data-bs-toggle='collapse' data-bs-target='#lqd-drawer-main-navigation' aria-expanded='false' aria-controls='lqd-drawer-main-navigation')
+              span.bars.inline-block.relative.z-1
+                span.bars-inner.flex.flex-col.w-full.h-full
+                  span.bar.inline-block.relative
+                  span.bar.inline-block.relative
+                  span.bar.inline-block.relative
+              span.text-black.text-capital.txt.inline-block Menu
+            #lqd-drawer-main-navigation.ld-module-dropdown.collapse.absolute
+              .ld-sd-wrap.padding-unset
+                .ld-sd-inner
+                  .flex.flex-row.pt-100.pb-50.px-50.module-col-inner(class='sm:flex-col sm:justify-between')
+                    .w-30percent.relative.flex.flex-col.justify-between(class='sm:w-full')
+                      .relative.flex.flex-col.module-social
+                        .pb-35.ld-fancy-heading.relative
+                          h2.ld-fh-element.text-16.m-0.text-black-30.inline-block.relative Social
+                        .lqd-fancy-menu.lqd-custom-menu.relative.lqd-menu-td-none.lqd-magnetic-items
+                          ul.reset-ul
+                            li.mb-25
+                              a.text-16.text-black(href='https://www.facebook.com/DvinsConceptzion/' target='_blank')
+                                span.link-icon.inline-flex.hide-if-empty.left-icon.icon-next-to-label
+                                |                                   Facebook
+                            li.mb-25
+                              a.text-16.text-black(href='#')
+                                span.link-icon.inline-flex.hide-if-empty.left-icon.icon-next-to-label
+                                |                                   Twitter
+                      .relative.flex.flex-col
+                        .w-full.ld-fancy-heading.relative
+                          h2.ld-fh-element.text-16.m-0.text-black-30.inline-block.relative Get in touch
+                        .max-w-full.ld-fancy-heading.relative
+                          .ld-fh-element.inline-block.relative.text-20.leading-1em(class='mb-0/5em sm:text-16')
+                            a.text-black(href='mailto:enquiry@dvinsconceptzion.com') enquiry@dvinsconceptzion.com
+                    .flex.flex-col(class='sm:order-first')
+                      .pb-30.ld-fancy-heading.relative
+                        h2.ld-fh-element.text-16.text-black-30.inline-block.relative Menu
+                      .module-primary-nav.flex
+                        .navbar-collapse.inline-flex.p-0.lqd-submenu-default-style.lqd-magnetic-items(aria-expanded='false' role='navigation')
+                          ul.link-black.main-nav.flex.reset-ul.lqd-menu-counter-right.lqd-menu-items-block.main-nav-hover-fade-inactive(data-submenu-options='{"toggleType": "slide", "handler": "click"}')
+                            li
+                              a.text-38(href='/') Home
+                            li
+                              a.text-38(href='about')
+                                span About
+                                span.link-icon.inline-flex.hide-if-empty.right-icon
+                                  i.lqd-icn-ess.icon-ion-ios-arrow-down
+                            li
+                              a.text-38(href='services')
+                                span Services
+                                span.link-icon.inline-flex.hide-if-empty.right-icon
+                                  i.lqd-icn-ess.icon-ion-ios-arrow-down
+                            li
+                              a.text-38(href='projects')
+                                span Projects
+                                span.link-icon.inline-flex.hide-if-empty.right-icon
+                                  i.lqd-icn-ess.icon-ion-ios-arrow-down
+                            li
+                              a.text-38(href='index#reviews')
+                                span Reviews
+                                span.link-icon.inline-flex.hide-if-empty.right-icon
+                                  i.lqd-icn-ess.icon-ion-ios-arrow-down
+                            li
+                              a.text-38(href='contact')
+                                span Contact
+                                span.link-icon.inline-flex.hide-if-empty.right-icon
+                                  i.lqd-icn-ess.icon-ion-ios-arrow-down
+            .lqd-module-backdrop
+  .lqd-stickybar-wrap.lqd-stickybar-left.flex-col.items-center.justify-between
+    .flex.items-center
+      .ld-module-sd.ld-module-sd-hover.ld-module-sd-left.flex-grow-1.items-start
+        button.nav-trigger.style-6.txt-left.collapsed.text-13.font-normal.p-0.flex.relative.items-center.justify-center(type='button' data-lqd-interactive-color='true' data-ld-toggle='true' data-bs-toggle-options='{"cloneTriggerInTarget": false, "type": "click"}' data-bs-toggle='collapse' data-bs-target='#lqd-drawer-stickybar-left' aria-expanded='false' aria-controls='lqd-drawer-stickybar-left')
+          span.bars.inline-block.relative.z-1
+            span.bars-inner.flex.flex-col.w-full.h-full
+              span.bar.inline-block.relative
+              span.bar.inline-block.relative
+              span.bar.inline-block.relative
+          span.txt.inline-block Menu
+        #lqd-drawer-stickybar-left.ld-module-dropdown.collapse.absolute.lqd-drawer-stickybar-left.w-880
+          .ld-sd-wrap
+            .w-full.min-h-100vh.flex.flex-row.justify-start.items-stretch.py-100.px-135.module-left-side
+              .w-30percent.flex.flex-col.justify-between
+                .flex.flex-col
+                  .pb-35.ld-fancy-heading.relative
+                    h2.ld-fh-element.text-16.m-0.text-black-30.inline-block.relative Social
+                  .lqd-fancy-menu.lqd-custom-menu.relative.lqd-menu-td-none.lqd-magnetic-items
+                    ul.reset-ul
+                      li.mb-25
+                        a.text-16.text-black(href='https://www.facebook.com/DvinsConceptzion/' target='_blank')
+                          span.link-icon.inline-flex.hide-if-empty.left-icon.icon-next-to-label
+                          span Facebook
+                      li.mb-25
+                        a.text-16.text-black(href='#')
+                          span.link-icon.inline-flex.hide-if-empty.left-icon.icon-next-to-label
+                          span Twitter
+                .flex.flex-col
+                  .ld-fancy-heading.relative
+                    h2.ld-fh-element.text-16.m-0.text-black-30.inline-block.relative Get in touch
+                  .ld-fancy-heading.relative
+                    .ld-fh-element.inline-block.relative.text-20.leading-1em(class='mb-0/5em')
+                      a.text-black(href='mailto:enquiry@dvinsconceptzion.com') enquiry@dvinsconceptzion.com
+              .flex.flex-col(class='sm:order-first')
+                .pb-30.ld-fancy-heading.relative
+                  h2.ld-fh-element.text-16.text-black-30.inline-block.relative Menu
+                .module-primary-nav.flex
+                  .navbar-collapse.inline-flex.p-0.lqd-submenu-default-style.lqd-magnetic-items(aria-expanded='false' role='navigation')
+                    ul.link-black.main-nav.flex.reset-ul.lqd-menu-counter-right.lqd-menu-items-block.main-nav-hover-fade-inactive(data-submenu-options='{"toggleType": "slide", "handler": "click"}' data-localscroll='true' data-localscroll-options='{"itemsSelector":">li > a", "offset": 85}')
+                      li
+                        a.text-38(href='/')
+                          | Home
+                      li
+                        a.text-38(href='about')
+                          | About
+                          span.link-icon.inline-flex.hide-if-empty.right-icon
+                            i.lqd-icn-ess.icon-ion-ios-arrow-down
+                      li
+                        a.text-38(href='services')
+                          | Services
+                          span.link-icon.inline-flex.hide-if-empty.right-icon
+                            i.lqd-icn-ess.icon-ion-ios-arrow-down
+                      li
+                        a.text-38(href='projects')
+                          | Projects
+                          span.link-icon.inline-flex.hide-if-empty.right-icon
+                            i.lqd-icn-ess.icon-ion-ios-arrow-down
+                      li
+                        a.text-38(href='index#reviews')
+                          | Reviews
+                          span.link-icon.inline-flex.hide-if-empty.right-icon
+                            i.lqd-icn-ess.icon-ion-ios-arrow-down
+                      li
+                        a.text-38(href='contact')
+                          | Contact
+                          span.link-icon.inline-flex.hide-if-empty.right-icon
+                            i.lqd-icn-ess.icon-ion-ios-arrow-down
+        .lqd-module-backdrop
+    .flex.items-center.pt-40
+      .flex.items-center.-rotate-180.z-100.vertical-lr
+        p.text-14
+          a.text-black(data-lqd-interactive-color='true' href='mailto:enquiry@dvinsconceptzion.com') enquiry@dvinsconceptzion.com
+    .flex.items-center
+      .-rotate-180.z-100.flex-grow-1
+        .lqd-scrl-indc.lqd-scrl-indc-style-dot.mx-auto.flex.whitespace-nowrap.align-self-end(data-lqd-scroll-indicator='true')
+          a.text-black(href='#wrap' data-localscroll='true' data-lqd-interactive-color='true')
+            span.lqd-scrl-indc-inner.flex.items-center
+              span.lqd-scrl-indc-txt Scroll to top
+              span.lqd-scrl-indc-line.flex-grow-1.relative
+                span.lqd-scrl-indc-el.inline-block.absolute.rounded-4
+  .lqd-stickybar-wrap.lqd-stickybar-right.items-center.justify-center
+    .-rotate-180.vertical-lr
+      a.button.text-black.text-14(href='#contact-modal' data-lity='#contact-modal' data-lqd-interactive-color='true')
+        | Send a message

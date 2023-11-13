@@ -1,0 +1,65 @@
+// Contact modal
+#contact-modal.lity-modal.lqd-modal.lity-hide(data-modal-type='fullscreen')
+  .lqd-modal-inner
+    .lqd-modal-head
+    section.lqd-modal-content.link-black.bg-center.bg-cover.bg-norepeat(style='background-image: url(./assets/images/common/modal-bg.jpeg);')
+      .container.min-h-100vh.flex.items-center.flex-wrap
+        .w-55percent.relative.flex.flex-col(class='sm:w-full')
+          .flex.flex-col.items-start.justify-center.py-10.pr-100.pl-10.module-content
+            .ld-fancy-heading
+              h2.ld-fh-element.text-120.text-black.font-medium(class='mb-0/5em leading-0/8em')
+                | Send a
+                span message.
+            .ld-fancy-heading
+              p.ld-fh-element.text-18(class='mb-0/5em') We&apos;re here to answer any question you may have.
+            .w-full.flex.flex-row.flex-grow-1.gap-10.module-info(class='sm:flex-col sm:flex-wrap')
+              .w-50percent.flex.flex-col.gap-10
+                .ld-fancy-heading.relative
+                  h6.ld-fh-element.text-14.font-bold.text-black.tracking-0.inline-block.relative(class='mb-0/5em mb-0/5em') careers
+                .ld-fancy-heading.relative
+                  p.ld-fh-element.text-16.inline-block.relative(class='leading-1/2em mb-0/5em mb-0/5em') Would you like to join our growing team?
+                .ld-fancy-heading.relative
+                  p.ld-fh-element.inline-block.relative.text-16.font-bold(class='mb-0/5em leading-1/2em')
+                    a(href='mailto:melvinang@dvinsconceptzion.com') melvinang@dvinsconceptzion.com
+              .w-50percent.flex.flex-col.gap-10.pl-15(class='sm:pl-0')
+                .ld-fancy-heading.relative
+                  h6.ld-fh-element.text-14.font-bold.text-black.tracking-0.inline-block.relative(class='mb-0/5em mb-0/5em') Feedbacks
+                .ld-fancy-heading.relative
+                  p.ld-fh-element.text-16.inline-block.relative(class='leading-1/2em mb-0/5em mb-0/5em') Have a project in mind? Send a message.
+                .ld-fancy-heading.relative
+                  p.ld-fh-element.inline-block.relative(class='mb-0/5em')
+                    span.text-16.font-bold(class='leading-1/2em')
+                      a(href='mailto:enquiry@dvinsconceptzion.com') enquiry@dvinsconceptzion.com
+        .w-45percent.relative.flex.flex-col.module-form(class='sm:w-full')
+          .lqd-contact-form.lqd-contact-form-inputs-underlined.lqd-contact-form-button-lg.lqd-contact-form-button-block.p-10(class='sm:p-0')
+            div(role='form')
+              .screen-reader-response
+                p(role='status' aria-live='polite' aria-atomic='true')
+              form.lqd-cf-form(action='./assets/php/mailer.php' method='post' novalidate='novalidate' data-status='init')
+                .row.-mr-15.-ml-15
+                  .col.col-md-6.col-12.px-15
+                    p
+                      span.lqd-form-control-wrap.text
+                        input.text-13.text-black.border-black-20.bg-transparent(type='text' name='name' value='' size='40' aria-required='true' aria-invalid='false' placeholder="What's your name?")
+                  .col.col-md-6.col-12.px-15
+                    p
+                      span.lqd-form-control-wrap.email
+                        input.text-13.text-black.border-black-20.bg-transparent(type='email' name='email' value='' size='40' aria-required='true' aria-invalid='false' placeholder='Email address')
+                  .col.col-md-6.col-12.px-15
+                    p
+                      span.lqd-form-control-wrap.tel
+                        input.text-13.text-black.border-black-20.bg-transparent(type='text' name='topic' value='' size='40' aria-required='true' aria-invalid='false' placeholder='Select a Discussion Topic')
+                  .col.col-md-6.col-12.px-15
+                    p
+                      span.lqd-form-control-wrap.text
+                        input.text-13.text-black.border-black-20.bg-transparent(type='text' name='budget' value='' size='40' aria-required='true' aria-invalid='false' placeholder="What's your budget?")
+                  .col.col-12.px-15
+                    p
+                      span.lqd-form-control-wrap.textarea
+                        textarea.text-13.text-black.border-black-20.bg-transparent(name='message' cols='10' rows='6' aria-required='true' aria-invalid='false' placeholder='Tell us about your project')
+                  .col.col-12.text-center.px-15
+                    input.lqd-cf-form-control.text-16.uppercase.font-medium.leading-1em.tracking-1.font-bold.bg-primary.text-white.rounded-100.border-none(type='submit' value='— send message')
+                    p.text-black(class='mt-1/25em') &mdash; copy email: enquiry@dvinsconceptzion.com
+              .lqd-cf-response-output
+    .lqd-modal-foot
+// Contact modal
