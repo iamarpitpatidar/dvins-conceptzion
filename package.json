@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "pug *.pug -w --out dist",
-    "build": "pug *.pug --out dist"
+    "dev": "parcel",
+    "build": "parcel build"
   },
   "devDependencies": {
-    "pug-cli": "^1.0.0-alpha6"
-  }
+    "@parcel/transformer-pug": "^2.10.2",
+    "parcel": "^2.10.2"
+  },
+  "source": "src/index.pug",
+  "browserslist": ["> 0.5%", "last 2 versions", "not dead"]
 }
