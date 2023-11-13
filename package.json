@@ -18,6 +18,7 @@
     "not dead"
   ],
   "parcelIgnore": [
-    "./assets/vendors/*"
+    "./assets/vendors/*",
+    "./assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css"
   ]
 }

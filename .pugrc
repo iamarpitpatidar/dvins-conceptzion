@@ -1,3 +1,6 @@
 {
-  "pretty": true
+  "pretty": true,
+  "locals": {
+    "app_url": "https://dvinsconceptzion.com"
+  }
 }
