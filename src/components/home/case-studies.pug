@@ -1,0 +1,125 @@
+// Start Case Studies
+section#case-studies.lqd-section.case-studies.bg-white.rounded-10.mb-90
+  .container-fluid.border-bottom.border-lightgray.py-30
+    .container
+      .row
+        .col.col-12.text-start
+          .ld-fancy-heading.relative.module-title
+            h2.ld-fh-element.inline-block.relative.text-28.m-0 Recent Projects
+  .container
+    .row
+      .col.col-12.pt-55.pb-25.module-col
+        .lqd-pf-grid.mt-20
+          .liquid-filter-items.items-center.justify-between
+            .liquid-filter-items-inner.flex-grow-1
+              span.liquid-filter-items-label.size-md Filter by
+              ul#pf-filter-case-studies.filter-list.filter-list-inline.items-centerd-lg-flex.flex.items-center(class='md:hidden')
+                li.active.text-15(data-filter='*')
+                  span All
+                li.text-15(data-filter='.branding')
+                  span Branding
+                li.text-15(data-filter='.custom-print')
+                  span Custom Print
+                li.text-15(data-filter='.digital-design')
+                  span Digital Design
+                li.text-15(data-filter='.ecommerce')
+                  span Ecommerce
+              .lqd-filter-dropdown.hidden(class='md:block' data-form-options='{ "dropdownAppendTo": "self" }')
+                select#lqd-filter-dropdown-pf-filter-case-studies(name='lqd-filter-dropdown-pf-filter-case-studies')
+                  option(selected='' data-filter='*' value='*') All
+                  option(data-filter='.branding' value='.branding') Branding
+                  option(data-filter='.custom-print' value='.custom-print') Custom Print
+                  option(data-filter='.digital-design' value='.digital-design') Digital Design
+                  option(data-filter='.ecommerce' value='.ecommerce') Ecommerce
+              a.btn.btn-naked.btn-icon-right.btn-hover-swp.text-13.font-normal.uppercase.leading-1em.text-black.rounded-100.whitespace-nowrap.capitalize(href='#contact-modal' data-lity='#contact-modal')
+                span.btn-txt(data-text='Hire me') Contact Us
+                span.btn-icon
+                  i.lqd-icn-ess.icon-md-arrow-forward
+                span.btn-icon
+                  i.lqd-icn-ess.icon-md-arrow-forward
+          .lqd-pf-row.row.flex.flex-wrap.-mr-30.-ml-30(data-liquid-masonry='true' data-masonry-options='{ "filtersID": "#pf-filter-case-studies", "filtersCounter": true }')
+            .lqd-pf-column.masonry-item.digital-design.ecommerce.col-12.col-sm-6.col-lg-4.px-30
+              article.lqd-pf-item.lqd-pf-item-style-2.lqd-pf-overlay-bg-scale.lqd-pf-dark.pf-details-h-str.rounded-6
+                .lqd-pf-item-inner.rounded-inherit
+                  .lqd-pf-img.mb-1em.relative.rounded-6.overflow-hidden
+                    figure.w-full
+                      img(width='581' height='524' src='./assets/images/case-studies/1.jpg' alt='case studies')
+                    span.lqd-pf-overlay-bg.lqd-overlay.flex.items-center.justify-center
+                      i.lqd-icn-ess.icon-md-arrow-forward
+                  .lqd-pf-details
+                    h2.lqd-pf-title.text-22.font-semibold.text-black.mt-0.mb-1 Beer
+                    ul.lqd-pf-cat.reset-ul.inline-nav.inline-flex.relative.z-2
+                      li
+                        a(href='#') Digital Design
+                  a.lqd-overlay.flex.lqd-pf-overlay-link.lqd-cc-icon-trigger.fresco(href='./assets/images/case-studies/1.jpg' data-fresco-group='true')
+            .lqd-pf-column.masonry-item.ecommerce.masonry.col-12.col-sm-6.col-lg-4.px-30
+              article.lqd-pf-item.lqd-pf-item-style-2.lqd-pf-overlay-bg-scale.lqd-pf-dark.pf-details-h-str.rounded-6
+                .lqd-pf-item-inner.rounded-inherit
+                  .lqd-pf-img.mb-1em.relative.rounded-6.overflow-hidden
+                    figure.w-full
+                      img(width='581' height='527' src='./assets/images/case-studies/2.jpg' alt='case studies')
+                    span.lqd-pf-overlay-bg.lqd-overlay.flex.items-center.justify-center
+                      i.lqd-icn-ess.icon-md-arrow-forward
+                  .lqd-pf-details
+                    h2.lqd-pf-title.text-22.font-semibold.text-black.mt-0.mb-1 Nike
+                    ul.lqd-pf-cat.reset-ul.inline-nav.inline-flex.relative.z-2
+                      li
+                        a(href='#') Ecommerce
+                  a.lqd-overlay.flex.lqd-pf-overlay-link.lqd-cc-icon-trigger.fresco(href='./assets/images/case-studies/2.jpg' data-fresco-group='true')
+            .lqd-pf-column.masonry-item.branding.custom-print.masonry.col-12.col-sm-6.col-lg-4.px-30
+              article.lqd-pf-item.lqd-pf-item-style-2.lqd-pf-overlay-bg-scale.lqd-pf-dark.pf-details-h-str.rounded-6
+                .lqd-pf-item-inner.rounded-inherit
+                  .lqd-pf-img.mb-1em.relative.rounded-6.overflow-hidden
+                    figure.w-full
+                      img(width='581' height='524' src='./assets/images/case-studies/3.jpg' alt='case studies')
+                    span.lqd-pf-overlay-bg.lqd-overlay.flex.items-center.justify-center
+                      i.lqd-icn-ess.icon-md-arrow-forward
+                  .lqd-pf-details
+                    h2.lqd-pf-title.text-22.font-semibold.text-black.mt-0.mb-1 Psalms
+                    ul.lqd-pf-cat.reset-ul.inline-nav.inline-flex.relative.z-2
+                      li
+                        a(href='#') Branding
+                  a.lqd-overlay.flex.lqd-pf-overlay-link.lqd-cc-icon-trigger.fresco(href='./assets/images/case-studies/3.jpg' data-fresco-group='true')
+            .lqd-pf-column.col-12.col-sm-6.col-lg-4.masonry-item.branding.digital-design.masonry.px-30
+              article.lqd-pf-item.lqd-pf-item-style-2.lqd-pf-overlay-bg-scale.lqd-pf-dark.pf-details-h-str.rounded-6
+                .lqd-pf-item-inner.rounded-inherit
+                  .lqd-pf-img.mb-1em.relative.rounded-6.overflow-hidden
+                    figure.w-full
+                      img(width='581' height='524' src='./assets/images/case-studies/4.jpg' alt='case studies')
+                    span.lqd-pf-overlay-bg.lqd-overlay.flex.items-center.justify-center
+                      i.lqd-icn-ess.icon-md-arrow-forward
+                  .lqd-pf-details
+                    h2.lqd-pf-title.text-22.font-semibold.text-black.mt-0.mb-1 Pixel Phone
+                    ul.lqd-pf-cat.reset-ul.inline-nav.inline-flex.relative.z-2
+                      li
+                        a(href='#') Branding
+                  a.lqd-overlay.flex.lqd-pf-overlay-link.lqd-cc-icon-trigger.fresco(href='./assets/images/case-studies/4.jpg' data-fresco-group='true')
+            .lqd-pf-column.masonry-item.custom-print.ecommerce.masonry.col-12.col-sm-6.col-lg-4.px-30
+              article.lqd-pf-item.lqd-pf-item-style-2.lqd-pf-overlay-bg-scale.lqd-pf-dark.pf-details-h-str.rounded-6
+                .lqd-pf-item-inner.rounded-inherit
+                  .lqd-pf-img.mb-1em.relative.rounded-6.overflow-hidden
+                    figure.w-full
+                      img(width='581' height='527' src='./assets/images/case-studies/5.jpg' alt='case studies')
+                    span.lqd-pf-overlay-bg.lqd-overlay.flex.items-center.justify-center
+                      i.lqd-icn-ess.icon-md-arrow-forward
+                  .lqd-pf-details
+                    h2.lqd-pf-title.text-22.font-semibold.text-black.mt-0.mb-1 Next Bank
+                    ul.lqd-pf-cat.reset-ul.inline-nav.inline-flex.relative.z-2
+                      li
+                        a(href='#') Custom Print
+                  a.lqd-overlay.flex.lqd-pf-overlay-link.lqd-cc-icon-trigger.fresco(href='./assets/images/case-studies/5.jpg' data-fresco-group='true')
+            .lqd-pf-column.masonry-item.custom-print.masonry.col-12.col-sm-6.col-lg-4.px-30
+              article.lqd-pf-item.lqd-pf-item-style-2.lqd-pf-overlay-bg-scale.lqd-pf-dark.pf-details-h-str.rounded-6
+                .lqd-pf-item-inner.rounded-inherit
+                  .lqd-pf-img.mb-1em.relative.rounded-6.overflow-hidden
+                    figure.w-full
+                      img(width='581' height='524' src='./assets/images/case-studies/6.jpg' alt='case studies')
+                    span.lqd-pf-overlay-bg.lqd-overlay.flex.items-center.justify-center
+                      i.lqd-icn-ess.icon-md-arrow-forward
+                  .lqd-pf-details
+                    h2.lqd-pf-title.text-22.font-semibold.text-black.mt-0.mb-1 Network
+                    ul.lqd-pf-cat.reset-ul.inline-nav.inline-flex.relative.z-2
+                      li
+                        a(href='#') Custom Print
+                  a.lqd-overlay.flex.lqd-pf-overlay-link.lqd-cc-icon-trigger.fresco(href='./assets/images/case-studies/6.jpg' data-fresco-group='true')
+// End Case Studies

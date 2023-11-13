@@ -1,1 +1,16 @@
 extends layout
+
+block content
+  include components/home/banner
+  include components/home/services
+  include components/home/solutions
+
+  // Start Section Dark
+  section.lqd-section.section-dark.max-w-full.bg-dark.px-75.pb-80
+    include components/home/vision
+    include components/home/case-studies
+    include components/home/section-flow
+    include components/home/testimonials
+  // End Section Dark
+
+  include components/home/contact
